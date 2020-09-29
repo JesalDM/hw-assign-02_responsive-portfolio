@@ -1,0 +1,20 @@
+/* Formatted the navbar-brand as required */
+.navbar-light .navbar-brand{
+    background-color: #4aaaa5;
+    color: white;
+    padding:2px;
+    margin-left: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 26px; 
+}
+
+/* Reduced the opacity of the ul items so that the active page stands out*/
+ul{
+    opacity: 0.8;
+}
+
+/* Applied a higher font-weight to the active class so that the current page is clearly highlighted and visible amongst others */
+.active{
+    font-weight:500;
+} 
