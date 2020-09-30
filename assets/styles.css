@@ -37,6 +37,15 @@ h1{
     font-weight: 800;
 }
 
+/* Applied margin to the portfolio images to vertically separate the images and adjust horizontally*/
+.img-fluid{
+    margin: 25px auto;
+} 
+
+/*Used a different selector than the .img-fluid class for the About-Me page image as the margin requirements were different(and ordered it after the .img-fluid class so that this applies)*/
+.float-left{
+    margin: 5px 20px 8px 5px;
+}
 /*Styled the footer as per requirement*/
 .page-footer{
     background-color: #666666;
