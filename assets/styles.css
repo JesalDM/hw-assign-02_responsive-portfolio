@@ -1,4 +1,4 @@
-/* Formatted the navbar-brand as required */
+/* Styled the navbar-brand as required */
 .navbar-light .navbar-brand{
     background-color: #4aaaa5;
     color: white;
@@ -14,7 +14,25 @@ ul{
     opacity: 0.8;
 }
 
-/* Applied a higher font-weight to the active class so that the current page is clearly highlighted and visible amongst others */
+/* Applied a higher font-weight to the active class so that the current page is clearly highlighted and stands out amongst others */
 .active{
     font-weight:500;
 } 
+
+/*Applied a subtle background image to the body that does not take away from the main content*/
+body{
+    background-image: url("./Images/body-background.png");  
+}
+
+/*Styled the container to provide a width that will display the content more than the background on smaller devices*/
+.container{
+    background-color: white;
+    width:85%; 
+}
+
+/*Styled the h1 as per requirement*/
+h1{
+    color: #4aaaa5;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
