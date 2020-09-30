@@ -36,3 +36,13 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
 }
+
+/*Styled the footer as per requirement*/
+.page-footer{
+    background-color: #666666;
+    height: 4rem;
+    border-top: 7px solid #4aaaa5; 
+    color: #6c747c;
+    font-size:1.2rem;
+    font-weight:400;
+}
