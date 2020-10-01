@@ -16,6 +16,7 @@
 /* Reduced the opacity of the ul items so that the active page stands out*/
 ul{
     opacity: 0.8;
+    font-size:18px;
 }
 
 /* Applied a higher font-weight to the active class so that the current page is clearly highlighted and stands out amongst others */
@@ -33,7 +34,7 @@ body{
     background-color: white;
     width:80%; 
     box-shadow: 0 0 3px lightgrey;
-    margin: 50px;
+    margin: 40px;
     padding: 35px;
 }
 
@@ -69,7 +70,7 @@ h1{
     text-decoration: underline;
     position:relative;
     left:50px;
-    bottom:40px; 
+    bottom:35px; 
 }
 
 /*This CSS selector is asssociated to the styling of the footer across all portfolio pages*/
