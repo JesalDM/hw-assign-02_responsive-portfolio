@@ -1,14 +1,18 @@
-/* Styled the navbar-brand as required */
+/* Styled the navbar-brand so that it is ocmmon across all portfolio pages as required */
 .navbar-light .navbar-brand{
     background-color: #4aaaa5;
     color: white;
-    padding:2px;
+    padding:5px;
     margin-left: 20px;
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 26px; 
 }
 
+/*Added pseudo-class to the .nav-link so that is displays a blue color on hover*/
+.navbar-light .navbar-nav .nav-link:hover{
+    color: blue;
+}
 /* Reduced the opacity of the ul items so that the active page stands out*/
 ul{
     opacity: 0.8;
@@ -24,13 +28,16 @@ body{
     background-image: url("./Images/body-background.png");  
 }
 
-/*Styled the container to provide a width that will display the content more than the background on smaller devices*/
+/*Styled the container so that is common across all portfolio pages while staying responsive*/
 .container{
     background-color: white;
-    width:85%; 
+    width:80%; 
+    box-shadow: 0 0 3px lightgrey;
+    margin: 50px;
+    padding: 35px;
 }
 
-/*Styled the h1 as per requirement*/
+/*Styled the h1 as per requirement in all the pages*/
 h1{
     color: #4aaaa5;
     font-family: 'Times New Roman', Times, serif;
@@ -44,9 +51,28 @@ h1{
 
 /*Used a different selector than the .img-fluid class for the About-Me page image as the margin requirements were different(and ordered it after the .img-fluid class so that this applies)*/
 .float-left{
-    margin: 5px 20px 8px 5px;
+    margin: 5px 20px 9px 0px;
 }
-/*Styled the footer as per requirement*/
+
+/*Overriden the Bootstrap CSS styling for the .btn class with custom styling as required */
+.btn{
+    background-color: #4aaaa5;
+    border-radius: 0;
+    color: white;
+    display:inline;
+
+}
+
+/*This CSS selector is associated to the positioning and styling of the social media links*/
+.social-media-link{
+    font-size:20px;
+    text-decoration: underline;
+    position:relative;
+    left:50px;
+    bottom:40px; 
+}
+
+/*This CSS selector is asssociated to the styling of the footer across all portfolio pages*/
 .page-footer{
     background-color: #666666;
     height: 4rem;
