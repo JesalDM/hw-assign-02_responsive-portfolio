@@ -13,62 +13,69 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!--Linking CSS stylesheet-->
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
+       <!--Title-->
     <title>Jesal Mehta</title>
 </head>
 <body>
-    <!--Bootstrap collapsible Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Jesal Mehta</a>
-        <!--Code for Nav links collapsible to hamburger on smaller devices-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <!--Nav links will open in the same tab-->
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">About</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-
-    <!--Used Bootstrap container and grid system for the basic layout of the main body-->
-    <!--Used Bootstrap utility classes to quickly style elements instead of styling it separately in CSS-->
-    <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1>About Me</h1>
-          </div> 
-        </div>        
-        <hr>
-      
-        <div class="row pt-2">
-           <div class="col-12">
-               <!--Created a placeholder for the image and the text content-->
-               <!--Bootstrap Responsive image using .img-fluid class-->
-               <!--Used Bootstrap .float-left class so that the text wraps around the image-->
-              <img src="https://via.placeholder.com/250" width="250px" height="250px" alt="Jesal's profile picture" class="img-fluid float-left">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut nostrum pariatur eaque tempora unde quam blanditiis nisi accusantium dolores. Aut doloremque quaerat vel in tenetur, libero recusandae quos porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa ex atque quae, repudiandae eos nemo quam dolorem dicta amet similique libero quos debitis fugiat sapiente vel pariatur! At, deserunt?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium mollitia harum architecto nostrum repudiandae quisquam, magni illo ab officia aliquid ullam aliquam laborum doloribus dolore iste unde voluptates autem veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam, porro aliquam quae reprehenderit aliquid ad, minus atque veritatis suscipit perferendis quas? Mollitia error animi corrupti rerum aperiam est nostrum!</p>
-           </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-12">
-              <p>Veritatis deserunt, totam labore harum incidunt sunt facilis impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ducimus laborum maxime dignissimos corrupti doloribus similique enim molestiae laboriosam est in, inventore, accusamus, fugit atque vero fugiat officiis fuga quidem.</p>
+    <!--Added header tag to incorporate HTML semantic elements-->
+    <header>
+        <!--Bootstrap collapsible Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Jesal Mehta</a>
+            <!--Code for Nav links collapsible to hamburger on smaller devices-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <!--Nav links will open in the same tab-->
+                <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="index.html">About</a>
+                </li>
+            </ul>
             </div>
-        </div> 
-    </div>
+        </nav>
+    </header>
 
-    <!--Footer-->
-    <!--Used Bootstrap classes to align the footer text-->
+    <!--Added main tag to incorporate HTML semantic elements-->
+    <main>
+        <!--Used Bootstrap container and grid system for the basic layout of the main body-->
+        <!--Used Bootstrap utility classes to quickly style elements instead of styling it separately in CSS-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>About Me</h1>
+                </div> 
+            </div>        
+            <hr>
+            <!--Added the section tag to hold both the images and the content togther, also making it HTML semantic-->
+            <section>
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <!--Created a placeholder for the image and the text content-->
+                        <!--Bootstrap Responsive image using .img-fluid class-->
+                        <!--Used Bootstrap .float-left class so that the text wraps around the image-->
+                        <img src="https://via.placeholder.com/250" width="250px" height="250px" alt="Jesal's profile picture" class="img-fluid float-left">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut nostrum pariatur eaque tempora unde quam blanditiis nisi accusantium dolores. Aut doloremque quaerat vel in tenetur, libero recusandae quos porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa ex atque quae, repudiandae eos nemo quam dolorem dicta amet similique libero quos debitis fugiat sapiente vel pariatur! At, deserunt?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium mollitia harum architecto nostrum repudiandae quisquam, magni illo ab officia aliquid ullam aliquam laborum doloribus dolore iste unde voluptates autem veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam, porro aliquam quae reprehenderit aliquid ad, minus atque veritatis suscipit perferendis quas? Mollitia error animi corrupti rerum aperiam est nostrum!</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-12">
+                    <p>Veritatis deserunt, totam labore harum incidunt sunt facilis impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ducimus laborum maxime dignissimos corrupti doloribus similique enim molestiae laboriosam est in, inventore, accusamus, fugit atque vero fugiat officiis fuga quidem.</p>
+                    </div>
+                </div> 
+            </section>
+        </div>
+    </main>
+
+    <!--Footer - Used Bootstrap classes to align the footer text-->
     <footer class="page-footer d-flex justify-content-center align-items-center mt-5">
         <p>&copy; Copyright</p>
     </footer>
