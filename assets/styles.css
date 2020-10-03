@@ -1,41 +1,34 @@
-/* Styled the navbar-brand so that it is ocmmon across all portfolio pages as required */
-.navbar-light .navbar-brand{
+/* Styled the .navbar-brand and .navbar-light so that it is common across all pages by giving them custom classes of .brand-identity and .nav-color respectively. 
+This is done in order to avoid any issues arising from directly overriding the Bootstrap class styles.*/
+.nav-color .brand-identity{
     background-color: #4aaaa5;
     color: white;
-    padding:5px;
+    padding:3px;
     margin-left: 20px;
     font-family:'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 26px; 
 }
 
-/*Added pseudo-class to the .nav-link so that it displays a blue color on hover*/
-.navbar-light .navbar-nav .nav-link:hover{
+/*Added pseudo-class to the .nav-link (by giving custom classes instead of modifying Bootstrap classes) so that it displays a blue color on hover*/
+.nav-color .nav-menu .li-link:hover{
     color: blue;
 }
-/* Reduced the opacity of the ul items so that the active page stands out*/
+
+/* Increased the font-size of the nav-items so that they are clearly visible*/
 ul{
-    opacity: 0.8;
     font-size:18px;
 }
 
-/* Applied a higher font-weight to the active class so that the current page is clearly highlighted and stands out amongst others */
-.active{
-    font-weight:500;
-} 
-
 /*Applied a subtle background image to the body that does not take away from the main content*/
 body{
-    background-image: url("./Images/body-background.png");  
+    background-image: url("./Images/body-background.png"); 
+    overflow-x:hidden; 
 }
 
-/*Styled the container so that is common across all portfolio pages while staying responsive*/
-.container{
+/*Styled the container using a custom class(.box) so that is common across all portfolio pages while staying responsive*/
+.box{
     background-color: white;
-    width:80%; 
-    box-shadow: 0 0 3px lightgrey;
-    margin: 40px;
-    padding: 35px;
 }
 
 /*Styled the h1 as per requirement in all the pages*/
@@ -45,37 +38,24 @@ h1{
     font-weight: 800;
 }
 
-/* Applied margin to the portfolio images to vertically separate the images and adjust horizontally*/
-.img-fluid{
-    margin: 25px auto;
-} 
-
-/*Used a different selector than the .img-fluid class for the About-Me page image as the margin requirements were different(and ordered it after the .img-fluid class so that this applies)*/
-.float-left{
-    margin: 5px 20px 9px 0px;
-}
-
-/*Overridden the Bootstrap CSS styling for the .btn class with custom styling as required */
-.btn{
+/*Created a CSS class selector .form-btn that is associated to the styling of the button as required on Contact page*/
+.form-btn{
     background-color: #4aaaa5;
-    border-radius: 0;
     color: white;
-    display:inline;
 }
 
-/*This CSS class selector is associated to the positioning and styling of the social media links*/
+/*This CSS class selector is associated to the positioning and styling of the social media links on the Contact page*/
 .social-media-link{
-    font-size:20px;
     text-decoration: underline;
     position:relative;
-    left:50px;
-    bottom:35px; 
+    left:58px;
+    bottom:12px; 
 }
 
-/*This CSS class selector is asssociated to the styling of the footer across all portfolio pages*/
+/*This CSS class selector is associated to the styling of the footer across all portfolio pages*/
 .page-footer{
     background-color: #666666;
-    height: 4rem;
+    height:55px;
     border-top: 7px solid #4aaaa5; 
     color: #6c747c;
     font-size:1.2rem;

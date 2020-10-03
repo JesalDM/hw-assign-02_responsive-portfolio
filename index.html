@@ -13,30 +13,32 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!--Linking CSS stylesheet-->
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
-       <!--Title-->
-    <title>Jesal Mehta</title>
+    <!--Title-->
+    <title>About Me | Jesal Mehta</title>
+    <!--Custom-made favicon-->
+    <link rel="icon" href="./assets/Images/favicon.ico">
 </head>
 <body class="d-flex flex-column h-100">
     <!--Used header tag to incorporate HTML semantic elements-->
     <header>
         <!--Bootstrap collapsible Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Jesal Mehta</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-color">
+            <a class="navbar-brand brand-identity" href="index.html">Jesal Mehta</a>
             <!--Code for Nav links collapsible to hamburger on smaller devices-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav nav-menu ml-auto">
                     <li class="nav-item">
                         <!--Nav links will open in the same tab-->
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link li-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link li-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">About</a>
+                        <a class="nav-link li-link active font-weight-bold" href="index.html">About</a>
                     </li>
                 </ul>
             </div>
@@ -47,13 +49,13 @@
     <main class="flex-shrink-0">
         <!--Used Bootstrap container and grid system for the basic layout of the main body-->
         <!--Used Bootstrap utility classes to quickly style elements instead of styling it separately in CSS-->
-        <div class="container">
+        <div class="container box shadow-sm w-75 mx-5 my-4 px-5 py-3">
             <div class="row">
                 <div class="col-12">
                     <h1>About Me</h1>
                 </div> 
             </div>        
-            <hr>
+            <hr class="mt-0">
             <!--Added the section tag to hold both the images and the content togther, also making it HTML semantic-->
             <section>
                 <div class="row pt-2">
@@ -61,7 +63,8 @@
                         <!--Created a placeholder for the image and the text content-->
                         <!--Bootstrap Responsive image using .img-fluid class-->
                         <!--Used Bootstrap .float-left class so that the text wraps around the image-->
-                        <img src="./assets/images/profile-picture.png" width="300px" height="300px" alt="Jesal's profile picture" class="img img-fluid float-left">
+                        <img src="./assets/images/profile-picture.png" width="280" height="280" alt="Jesal's profile picture" class="img img-fluid float-left my-2 mr-4">
+                        <!--About myself-->
                         <p>I'm <strong>Jesal Mehta</strong>, currently pursuing a Full stack Web Development University Course, to better my skills on my new found passion for technology. I'm a finance graduate  with an initial  international experience of a couple of years in a Credit Analyst role. After moving to US, I gathered my first experiences in the IT industry working as a Business Analyst in a fintech Company in Boston, that instantly grabbed my interest to work in this domain.</p>
                         <p>I'm easy to work with, and strongly believe in teamwork. My dedication to work, willingness to learn more and firm determination has helped me produce outstanding results within defined timelines. I've consistently demonstrated success in guiding my projects to completion.</p>
                         <p>Outside of work, I enjoy travelling, playing indoor games, solving riddles and spending time with friends and family.</p> 

@@ -13,29 +13,31 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!--Linking CSS stylesheet-->
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    <title>Contact</title>
+    <title>Contact | Jesal Mehta</title>
+    <!--Custom-made favicon-->
+    <link rel="icon" href="./assets/Images/favicon.ico">
 </head>
 <body class="d-flex flex-column h-100">
     <!--Used header tag to incorporate HTML semantic elements-->
     <header>
       <!--Bootstrap collapsible Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Jesal Mehta</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav-color">
+        <a class="navbar-brand brand-identity" href="index.html">Jesal Mehta</a>
         <!--Code for Nav links collapsible to hamburger on smaller devices-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav nav-menu ml-auto">
             <li class="nav-item">
               <!--Nav links will open in the same tab-->
-              <a class="nav-link active" href="contact.html">Contact</a>
+              <a class="nav-link li-link active font-weight-bold" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link li-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">About</a>
+              <a class="nav-link li-link" href="index.html">About</a>
             </li>
           </ul>
         </div>
@@ -46,13 +48,14 @@
     <main class="flex-shrink-0">
       <!--Used Bootstrap grid system for creating a responsive form layout-->
       <form>
-        <div class="container">
+        <!--Added Bootstrap utility classes to the container to style and position it as required-->
+        <div class="container box shadow-sm w-75 mx-5 my-4 px-5 py-3">
             <div class="row">
               <div class="col-12">
                 <h1>Contact</h1>
               </div>
             </div>
-            <hr>
+            <hr class="mt-0">
             <!--Added a section to group the form input elements-->
             <section>
               <div class="row">
@@ -83,14 +86,14 @@
               </div>
               <div>
                 <!--Button to submit the contact form details-->
-                <button type="button" class="btn btn-lg">Submit</button>
+                <button type="button" class="btn btn-lg form-btn rounded-0">Submit</button>
               </div>
           </section>
         </div>
       </form>
       <!--Added a section to represent the social media links that will be added as needed-->
       <section>
-          <div class="social-media-link">
+          <div class="social-media-link h5">
           <!--Social media link when clicked to open in a different browser tab-->
           <a href="https://www.linkedin.com/in/jesal-mehta-264bb2169/" target="_blank">LinkedIn Profile</a>
         </div>
